@@ -1,4 +1,9 @@
-images: 
+
+# Wizard Studio
+*installation*
+git clone https://github.com/Little-Ducky/Wizard-Studio.git
+
+*images:*
 
 ![image](https://github.com/Little-Ducky/Wizard-Studio/assets/157147587/a5258258-add3-42c2-99dd-c954058685af)
 ![example1](https://github.com/Little-Ducky/Wizard-Studio/assets/157147587/33e42d4e-89d1-4d2b-9e0a-8229838ca662)
