@@ -1,6 +1,8 @@
 
 # Wizard Studio
-*installation*
+
+*installation* 
+
 git clone https://github.com/Little-Ducky/Wizard-Studio.git
 
 *images:*
