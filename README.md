@@ -3,9 +3,7 @@
 
 *installation* 
 <pre>
-```
 git clone https://github.com/Little-Ducky/Wizard-Studio.git
-```
 </pre>
 *images:*
 
