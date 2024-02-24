@@ -1,0 +1,345 @@
+/* DarkThemeStyle.css */
+
+QSplitter::handle { border: none; }
+
+/* QTabWidget */
+
+QTabBar::tab {
+    background: #FBB03B;
+    color: #E6E6E6;
+    min-height: 30px;
+    color: #141414;
+}
+
+QTabBar::tab:!selected {
+    background: #E6E6E6; 
+}
+
+QTabBar::tab QPushButton {
+    width: 10px;
+    height: 10px;
+    margin-left: 2px; 
+    background: transparent; 
+    border: none;
+    icon: url(:/sources/img/icons/closeBtn.svg);
+}
+
+QTabBar{
+    min-height: 30px; 
+    background-color: #141414; 
+    qproperty-drawBase: 0;
+}
+
+/* CodeEditor & lineNumberArea */
+
+CodeEditor {
+    color: #E6E6E6; 
+    font-size: 16px;
+    border: none;
+}
+
+#viewport {
+    background: #0E0E0E;
+}
+
+QAbstractScrollArea::corner {
+    background: #141414;
+}
+
+CodeEditor QScrollBar {
+    background: #141414;
+    min-width: 13px;
+    min-height: 13px;
+}
+
+CodeEditor QScrollBar::handle {
+    background: #333333;
+    border-radius: 4px; 
+    margin: 1.5px;
+}
+
+CodeEditor QScrollBar::handle:vertical {
+    min-height: 15px;
+}
+
+CodeEditor QScrollBar::handle:horizontal {
+    min-width: 15px;
+}
+
+CodeEditor QScrollBar::add-page, QScrollBar::sub-page { 
+    background: none; 
+}
+
+CodeEditor QScrollBar::add-line, QScrollBar::sub-line { 
+    width: 0; height: 0; 
+}
+
+LineNumArea {
+    color: #E6E6E6;
+    font-size: 16px;
+}
+
+/* QTreeWidget */
+
+#sideBar {
+    background: #141414;
+    border: none;
+    padding: 15px 0;
+}
+
+QTreeWidget::item {
+    border: none;
+    color: #E6E6E6;
+}
+
+#sideBar QScrollBar {
+    background: transparent;
+}
+
+#sideBar QScrollBar:vertical {
+    width: 9px;
+}
+
+#sideBar QScrollBar:horizontal {
+    height: 9px;
+}
+
+#sideBar QScrollBar::handle:vertical {
+    background: #333333;  
+    border-radius: 4px;
+    min-width: 9px;
+}
+
+#sideBar QScrollBar::handle:horizontal {
+    background: #333333;
+    border-radius: 4px;
+    min-height: 9px;
+}
+
+#sideBar QScrollBar::add-page, #sideBar QScrollBar::sub-page {
+    background: none;
+}
+
+#sideBar QScrollBar::add-line, #sideBar QScrollBar::sub-line {
+    width: 0;
+    height: 0;
+}
+
+/* Main */
+
+#MainWindow {
+   background: #0E0E0E;
+}
+
+/* QMenuBar & QMenu */
+
+#menubar {
+   background: transparent;
+   padding: 9px;
+   color: #E6E6E6;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+#menubar QMenu { 
+   font-size: 12px;
+}
+
+/* StackedWidget & Children */
+
+#stackedWidget {
+}
+
+#startSection {
+   background: #141414; 
+}
+
+#startSection #label {
+   color: #E6E6E6;
+   font-size: 16px;
+}
+
+#workSection {
+   border-radius: 12px;
+}
+
+/* Output */
+
+#output {
+   background: #141414;
+}
+
+#outputLabel {
+   color: #E6E6E6;
+   font-size: 13px;
+}
+
+#hideOutputButton {
+   background: transparent;
+   border: none;
+}
+
+#outputField {
+   background: transparent; 
+   border: none;  
+   color: #E6E6E6;
+}
+
+#outputField QScrollBar {
+    background: transparent;  
+    width: 5px;
+}
+
+#outputField QScrollBar::handle:vertical {
+    background: #333333;  
+    min-height: 10px;
+    min-width: 10px;
+    border-radius: 1px;
+}
+
+#outputField QScrollBar::add-page, #sideBar QScrollBar::sub-page {
+    background: none;
+}
+
+#outputField QScrollBar::add-line, #sideBar QScrollBar::sub-line {
+    width: 0;
+    height: 0;
+}
+
+/* StatusBar */
+
+#statusBar {
+   background: #141414;
+}
+
+#statusBar::item { 
+   border: none; 
+}
+
+#statusBar QPushButton { 
+   margin-left: 9px;
+   color: #E6E6E6;
+   border: none; 
+   background: transparent;
+}
+
+
+/* SplashScreen */
+
+#SplashScreen {
+   background: #0E0E0E url(":/sources/img/logo.svg") no-repeat center;
+}
+
+#SplashScreen QLabel {
+   font-weight: bold;
+   font-size: 14px;
+   color: #E6E6E6;
+   margin-bottom: 12px;
+}
+
+/* startSection */
+
+#labelIntimation {
+   color: #4D4D4D;
+}
+
+/* setting program dialog */
+
+DialogSettingProgram {
+   background: #141414;
+}
+
+DialogSettingProgram #stackedWidget, #listWidget {
+  background: #141414;
+  border: 1px solid silver;
+}
+#listWidget {
+  color: #E6E6E6;
+}
+#listWidget {
+  padding: 10px;
+  border: 1px solid silver;
+}
+
+DialogSettingProgram #stackedWidget QLabel, DialogSettingProgram #listWidget QLabel {
+  color: #E6E6E6;
+  font-weight: bold;
+}
+
+/* project properties */
+
+DialogPropertiesProject {
+   background: #141414;
+}
+
+DialogPropertiesProject QLabel {
+   font-weight: bold;
+   color: #E6E6E6;
+}
+
+DialogPropertiesProject #labelAddtionalProps {
+   font-size:  22px;
+}
+
+DialogPropertiesProject #labelSubTitleAddFile {
+   font-size: 18px;
+}
+
+DialogPropertiesProject #pushButtonAddLibrary, 
+DialogPropertiesProject #pushButtonAddInput, 
+DialogPropertiesProject #pushButtonAddInclude {
+  text-align: left;
+  padding: 5px;
+  background: url(:/sources/img/icons/plus.svg) no-repeat center right;
+}
+
+
+DialogField {
+  background: #1A1A1A;
+}
+
+DialogField QPlainTextEdit {
+  background-color: transparent; 
+  color: #E6E6E6;
+}
+
+/* dialog unacceptable */
+
+DialogUnacceptable {
+  background: #0E0E0E;
+}
+
+DialogUnacceptable {
+  background: #141414; 
+  font-size: 12px;
+  color: #141414;
+  font-weight: bold;
+}
+ 
+DialogUnacceptable QPlainTextEdit {
+   border: 1px solid silver;
+   font-size: 12px;
+   color: #E6E6E6;
+   background: transparent;
+}
+
+DialogUnacceptable QPlainTextEdit QScrollBar {
+    background: transparent;
+    width: 16px;
+}
+
+DialogUnacceptable QPlainTextEdit QScrollBar::handle {
+    background: #FBB03B;
+    border-radius: 4px; 
+    margin: 1.5px;
+    min-height: 15px;
+    min-width: 5px;
+}
+
+DialogUnacceptable QPlainTextEdit QScrollBar::add-page, QScrollBar::sub-page { 
+    background: none; 
+}
+
+DialogUnacceptable QPlainTextEdit QScrollBar::add-line, QScrollBar::sub-line { 
+    width: 0; height: 0; 
+}

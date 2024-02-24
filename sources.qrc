@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/sources">
+        <file>img/icons/closeBtn.svg</file>
+        <file>img/icons/file.svg</file>
+        <file>img/icons/folder.svg</file>
+        <file>img/icons/closeOutput.svg</file>
+        <file>style/DarkThemeStyle.css</file>
+        <file>style/SoftThemeStyle.css</file>
+        <file>style/LightThemeStyle.css</file>
+        <file>img/logo.svg</file>
+        <file>img/icons/openFile.svg</file>
+        <file>img/icons/openProject.svg</file>
+        <file>img/icons/createFile.svg</file>
+        <file>img/icons/createProject.svg</file>
+        <file>img/icons/saveFile.svg</file>
+        <file>img/icons/Output.svg</file>
+        <file>img/icons/run.svg</file>
+        <file>img/icons/compile.svg</file>
+        <file>img/icons/downArrow.svg</file>
+        <file>img/icons/setting.svg</file>
+        <file>img/icons/rename.svg</file>
+        <file>img/icons/delete.svg</file>
+        <file>img/icons/current.svg</file>
+        <file>img/icons/remove.svg</file>
+    </qresource>
+</RCC>
