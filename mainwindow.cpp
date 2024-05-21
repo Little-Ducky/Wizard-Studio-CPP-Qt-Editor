@@ -10,8 +10,18 @@ MainWindow::MainWindow(QWidget *parent)
     cmakeRunConfigProcess = new QProcess;
     cmakeRunBuildProcess = new QProcess;
 
-    cmakeRunConfigProcess->setProgram("cmd");
-    cmakeRunBuildProcess->setProgram("cmd");
+    #ifdef Q_OS_WIN
+        cmakeRunConfigProcess->setProgram("cmd");
+        cmakeRunBuildProcess->setProgram("cmd");
+    #elif defined(Q_OS_MAC)
+        cmakeRunConfigProcess->setProgram("open");
+        cmakeRunBuildProcess->setProgram("open");
+    #elif defined(Q_OS_LINUX)
+        cmakeRunConfigProcess->setProgram("xdg-open");
+        cmakeRunBuildProcess->setProgram("xdg-open");
+    #else
+        qWarning("IDE is not supported on this platform.");
+    #endif
 
     //setup needed widgets
     statusBarText = new QPushButton;
